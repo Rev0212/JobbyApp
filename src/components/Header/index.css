@@ -1,0 +1,117 @@
+.nav-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202020;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1110px;
+  padding: 15px 0px 25px 0px;
+}
+
+/* Mobile Navbar */
+.nav-bar-mobile-logo-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-bar-mobile-icons-container {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-mobile-btn {
+  border: none;
+  padding: 0px;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 24px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item-mobile-link {
+  font-size: 24px;
+  color: white;
+  margin-right: 20px;
+}
+
+/* Desktop Navbar */
+.nav-bar-large-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1110px;
+}
+
+.website-logo {
+  width: 90%;
+  margin-top: 12px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: flex-end;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.nav-menu-item {
+  text-decoration: none;
+  margin: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.logout-desktop-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: aliceblue;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  padding: 12px 42px;
+}
+
+/* Visibility Settings */
+.nav-bar-mobile-logo-container {
+  display: none; /* Hide mobile navbar by default */
+}
+
+.nav-bar-large-container {
+  display: flex; /* Show desktop navbar by default */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .nav-bar-large-container {
+    display: none; /* Hide desktop navbar on small screens */
+  }
+
+  .nav-bar-mobile-logo-container {
+    display: flex; /* Show mobile navbar on small screens */
+  }
+}

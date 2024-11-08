@@ -1,0 +1,54 @@
+.filters-group-sidebar {
+  width: 250px;
+  background-color: #000000;
+  padding: 20px;
+  color: white;
+  width: 250px;
+  height: 100vh;
+}
+
+.horizontal-line {
+  background-color: #475569;
+  height: 1px;
+  border: none;
+  margin: 20px 0;
+}
+
+.employment-type-container,
+.salary-range-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.employment-type-heading,
+.salary-range-heading {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.employment-type-list-container,
+.salary-range-list-container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.employee-item,
+.salary-item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.check-label {
+  color: white;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.check-input {
+  margin-right: 10px;
+}

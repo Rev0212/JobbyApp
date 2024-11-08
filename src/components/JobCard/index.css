@@ -1,0 +1,129 @@
+.link-item {
+  text-decoration: none;
+}
+
+.job-item {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.logo-title-location-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.title-rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-heading {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.rating-icon {
+  color: yellow;
+  margin-right: 10px;
+}
+
+.rating-heading {
+  color: white;
+  font-weight: bold;
+}
+
+.location-package-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.location-employee-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.location-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+
+.location-icon {
+  color: white;
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.brief-case-icon {
+  color: white;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.location-heading {
+  color: white;
+  font-size: 14px;
+}
+
+.package-heading {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.employee-type-container {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.employee-type-heading {
+  color: white;
+  font-size: 14px;
+}
+
+.line {
+  color: gray;
+  width: 100%;
+}
+
+.description-heading {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.description-text {
+  color: white;
+  font-size: 15px;
+  line-height: 1.8;
+}
