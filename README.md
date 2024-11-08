@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Jobby App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A ReactJS application for job listings and search with authentication and dynamic filtering. This app includes routes for Login, Home, Jobs, Job Item Details, and Not Found. Each route has specific functionality, with API integrations for job data and user management.Its made from the assignment of Nxtwave
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Login Route
+- **Invalid Credentials**: Displays error message when credentials are incorrect.
+- **Successful Login**: Navigates to Home Route on valid credentials.
+- **Route Protection**: Unauthenticated users accessing protected routes (Home, Jobs, Job Item Details) are redirected to Login. Authenticated users are redirected to Home when accessing Login.
 
-### `npm start`
+### Home Route
+- **Authenticated Access**: Only authenticated users can view the Home route.
+- **Find Jobs**: Redirects to Jobs Route when clicked.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Jobs Route
+- **Profile Data**: Fetches and displays user profile data via HTTP GET request. Shows loader while fetching.
+- **Job List**: Fetches job listings with filters for employment type, salary range, and search. Displays loader during data fetch.
+- **Failure Handling**: Shows a failure view on API errors, with retry options.
+- **Filtering and Search**:
+  - **Search**: Fetches jobs by search term.
+  - **Employment Type**: Fetches jobs by selected employment type(s).
+  - **Salary Range**: Fetches jobs by selected salary range.
+  - **Combined Filters**: Applies all selected filters in a single API request.
+  - **Empty Results**: Shows "No Jobs" view when no jobs match the filters.
+- **Job Details**: Navigates to Job Item Details when a job is clicked.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Job Item Details Route
+- **Job Details Fetch**: Retrieves job details and similar jobs.
+- **Failure Handling**: Displays failure view on API error with retry option.
+- **Visit Company Website**: Opens the job's company website in a new tab.
 
-### `npm test`
+### Not Found Route
+- **Invalid Path Handling**: Redirects to Not Found Route for non-existent URLs.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Header
+- **Navigation**:
+  - **Logo**: Redirects to Home.
+  - **Home & Jobs Links**: Redirects to respective routes.
+  - **Logout**: Redirects to Login.
 
-### `npm run build`
+## App Data
+- **Employment Types**: Provided list of employment type objects with `employmentTypeId` and `label`.
+- **Salary Ranges**: Provided list of salary range objects with `salaryRangeId` and `label`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API Requests & Responses
+The app interacts with Profile, Jobs, and Job Details API endpoints, implementing GET requests and handling responses.
+- **Login API** : https://apis.ccbp.in/login
+- **Jobs API** : https://apis.ccbp.in/jobs
+- **Profile API** : ttps://apis.ccbp.in/profile
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## User Credentials
+- **Test User Credentials for Login**:
+  - Username: `rahul`
+  - Password: `rahul@2021`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Run the app with `npm start`.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+Feel free to open issues or submit pull requests for improvements.
