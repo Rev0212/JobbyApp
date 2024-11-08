@@ -47,7 +47,7 @@ A ReactJS application for job listings and search with authentication and dynami
 The app interacts with Profile, Jobs, and Job Details API endpoints, implementing GET requests and handling responses.
 - **Login API** : https://apis.ccbp.in/login
 - **Jobs API** : https://apis.ccbp.in/jobs
-- **Profile API** : ttps://apis.ccbp.in/profile
+- **Profile API** : https://apis.ccbp.in/profile
 
 ## User Credentials
 - **Test User Credentials for Login**:
